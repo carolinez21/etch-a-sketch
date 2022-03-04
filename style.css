@@ -1,10 +1,33 @@
+body {
+    background-color: lightgray;
+}
+
 .container {
     display: grid;
-    width: 800px;
-    border: .5px solid gray;
+    background-color: white;
+    width: 750px;
+    border: none;
     margin-top: 4px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .grid-element {
     aspect-ratio: 1;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+#btn {
+    font-size: 16px;
+    font: helvetica;
+    background-color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 0.5px solid gray;
 }

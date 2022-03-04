@@ -29,16 +29,16 @@ function decreaseTransparency(e){
 }
 
 function drawGrid(numSquares){
-    container.style.gridTemplateColumns = `repeat(${numSquares}, ${800/numSquares}px)`;
+    container.style.gridTemplateColumns = `repeat(${numSquares}, ${750/numSquares}px)`;
     let totalSquares = numSquares*numSquares;
     for(let i = 1; i <= totalSquares; i++){
         const square = document.createElement('div');
         square.classList.add('grid-element');
         container.appendChild(square);
         square.addEventListener('mouseenter', 
-        //changeColor
+        changeColor
         //changeRandomColor
-        decreaseTransparency
+        //decreaseTransparency
         )
     }
 }
